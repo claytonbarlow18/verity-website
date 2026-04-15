@@ -1499,10 +1499,13 @@
 
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.addEventListener('click', () => {
-      document.querySelector('.nav-links').style.display = 'none';
+      if (window.innerWidth <= 900) {
+        document.querySelector('.nav-links').style.display = 'none';
+      }
     });
   });
 </script>
 
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69d43090a3eb883d96ae7d5f"></script>
 </body>
 </html>
